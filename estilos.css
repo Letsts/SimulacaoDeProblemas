@@ -1,0 +1,215 @@
+body{
+    background: linear-gradient(45deg, #c6c4c4,#3d11b8,#a83b53,#82377d);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+    margin: 0;
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+header{
+    background-color:rgba(255, 255, 255, 0.881);
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 500%;
+    background: -webkit-linear-gradient(#3600C9, #B10027);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    margin: 0;
+    padding:2%;
+}
+
+p, .botoes{
+    color: white;
+    text-align: justify;
+    margin: 5%;
+    margin-left: 14%;
+    font-family: 'Sora', sans-serif;
+    font-size: 95%;
+}
+
+p::selection, strong::selection{
+    background-color: white;
+    color:black;
+}
+
+#definicao .colunas {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+  
+#definicao .coluna {
+    flex: 1;
+}
+  
+#definicao input {
+    width: 6em;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+#submeter{
+    cursor:pointer;
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    background-color: #EAD8F1;
+    border: 0;
+    border-radius: 10px; 
+    border-style: solid;
+    /* border-color: 1px dashed black; */
+    font-family: 'Sora', sans-serif;
+}
+
+
+#submeter:hover{
+    transition: 0.3s;
+    background-color: #ffcafe;
+}
+
+#formula{
+    width: 49%;
+    border: 3px dashed black;
+}
+
+/* Janela Modal retirada do video do professor Coutinho no canal Flavio Coutinho :) */
+#desenvolvedores{
+    color: black;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 130%;
+}
+
+#quadroInicial{
+    background: white;
+    padding: 3%;
+    max-width: 400px;
+    border-radius: 7%;
+    box-shadow: 0 5px 1px rgba(0,0,0,.2);
+    margin: 150px auto;
+}
+
+#apelido, #codigo{
+    font-size: 20px;;
+    padding: 7px;
+    border-radius: 7px;
+    margin: 10px auto;
+}
+
+#inicial img {
+    height: 300%;
+    width: 300%;
+}
+
+#participantes{
+    cursor:pointer;
+    display: block;
+    background-color: #EAD8F1;
+    border: 0;
+    border-radius: 10px; 
+    border-style: solid;
+    /* border-color: 1px dashed black; */
+    font-family: 'Sora', sans-serif;
+    font-size: 120%;
+    margin-bottom: 0%;
+    padding: 1%;
+    margin-left: 1%;
+    position: absolute;
+    top: 1%;
+}
+
+#participantes:hover{
+    color: purple;
+    
+}
+
+.modal{
+    display: none;
+    font-size: 20px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    z-index: 10;
+    width: 25%;
+    max-width: max-content;
+    left: 30%;
+    top: 35%;
+    margin: 150px auto;
+    background-color: white;
+    transform: translateY(-25%);
+    padding: 5%;
+    border-radius: 2%;
+    box-shadow: 0 5px 1px rgba(0,0,0,.2);
+    transition: all 200ms ease-out;
+}
+
+span.fecharModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    background-color: rgb(182, 174, 174);
+    border-radius: 60%;
+    width: 2em;
+    height: 2em;
+    padding: 0.5%;
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+span.fecharModal:hover {
+    background-color: rgba(173, 11, 11, 0.616);
+}
+
+button.fecharModal{
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+}
+
+.modal.visivel{
+    display: block;
+    transform: translateY(-50%);
+    margin-top: 8%;
+}
+
+#mascara{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal.visivel ~ #mascara{
+    opacity: 0.4;
+    pointer-events: initial;
+}

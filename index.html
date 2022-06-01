@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Equilibrio Termico</title>
+    <link rel="icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Freckle+Face">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Cuprum&family=Sora:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <button id="participantes">Desenvolvedores</button>
+        <div class="modal">
+            <span class="fecharModal">X</span>
+            <div class="corpoModal">
+                <h2>Participantes:</h2>
+                <p id="desenvolvedores">Júlia Lima<br><br>Letícia Schmidt<br><br>Nathan Filipe Izidorio</p>
+                <h2>Turma:</h2>
+                <p id="desenvolvedores">Redes de Computadores 2A</p>
+            </div>
+        </div>
+        <div id="mascara"></div>
+        <h1>Equilíbrio Térmico</h1>
+    </header>
+    <article id="definicao">
+        <div class="colunas">
+            <div class="coluna">
+                <p> O <strong>equilíbrio térmico</strong> acontece quando <strong>dois corpos</strong> - inicialmente em
+                    temperaturas diferentes - entram
+                    em contato e
+                    após um processo de transferência de calor, <strong>atingem a mesma temperatura</strong>.
+                    <br><br>
+                    Lembre-se de que o calor é sempre transferido do corpo de maior temperatura para o de menor
+                    temperatura.
+                </p>
+                <p>
+                    <strong>Fórmula</strong> para calcular o equilíbrio térmico é:
+                    <br><br>
+                    <img id="formula" src="imgs/formula.PNG">
+                    <br><br> <em>C1</em> e <em>C2</em> é o calor específico, nesse site, utilizamos 1,00cal/g°C por ser
+                    o calor específico da água<br><br><em>M1</em> e <em>M2</em>, a massa<br><br><em>T1</em> e
+                    <em>T2</em>, a temperatura inicial<br><br><em>Teq</em>,
+                    a temperatura de equilíbrio térmico
+                </p>
+            </div>
+            <div class="coluna">
+                <p><strong>Calcule</strong> o equilíbrio termico: </p>
+                <div class="botoes">
+                    <label for="m1">Massa 1 (em Kg):</label>
+                    <input id="m1">
+                </div>
+                <div class="botoes">
+                    <label for="m2">Massa 2 (em Kg):</label><br>
+                    <input id="m2">
+                </div>
+                <div class="botoes">
+                    <label for="t1">Temperatura 1 (em °C):</label>
+                    <input id="t1">
+                </div>
+                <div class="botoes">
+                    <label for="t2">Temperatura 2 (em °C):</label>
+                    <input id="t2">
+                </div>
+                <div class="botao">
+                    <button id="submeter">Calcular</button>
+                </div>
+                <div class="botoes">
+                    <label for="resp">Resultado:</label>
+                    <input id="resp" disabled>
+                </div>
+
+            </div>
+        </div>
+    </article>
+    <script src="problema3.js"></script>
+    <script src="integrantes.js"></script>
+</body>
+
+</html>
