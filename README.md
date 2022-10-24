@@ -11,7 +11,7 @@ temperatura de “T2” °C.
 <br>
 <strong>Saida:</strong> TE
 <br><br>
-Desenvolvido por
+## Desenvolvido por
 * <a href="https://github.com/JuliaReisSilvaLima">👩‍💻 Júlia Reis</a>
 * <a href="https://github.com/Letsts">👩‍💻 Letícia Schmidt</a>
 * <a href="https://github.com/nathanfl1">👨‍💻 Nathan Filipe</a>
